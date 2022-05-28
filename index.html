@@ -6,13 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Into The Wild</title>
     <link rel="stylesheet" href="./css/index.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" href="img/into.ico.jpg">
 </head>
 <body>
     <div class="contenedor">
                                                          <!-- HEADER DE LA PAGINA-->
         <header class="header">
-            <div class="logo">
+            <div class="logo" data-aos="flip-up">
                 <a href="index.html"><img src="./img/into-the-wild-507c3bf42ccdd.png" alt="logo"></a>
             </div>
             <nav class="menu">
@@ -38,7 +39,7 @@
                 </p>
                 <a href="#" class="btn-link">Leer más</a>
             </div>
-            <div class="contenedor-thumbnail">
+            <div class="contenedor-thumbnail" data-aos="fade-down-right">
                 <a href="#">
                     <img src="./img/lagosmall.png" alt="lago" />
                 </a>
@@ -120,6 +121,10 @@
             <p>Copyright © </p>
         </footer>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
 
