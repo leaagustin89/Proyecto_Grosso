@@ -83,7 +83,7 @@ a {
 	color: #fff;
 }
 
-/* ---------- Articulos ----------*/
+/* ---------- ARTICULOS ----------*/
 .articulo {
 	display: flex;
 	background: #fff;
@@ -114,7 +114,6 @@ a {
 }
 
 
-
 .articulo .extracto {
 	font-size: 1.25em; 
 	line-height: 1.5625rem; 
@@ -123,7 +122,7 @@ a {
 	color: #868b8d;
 }
 
-/* ---------- Articulo Destacado ----------*/
+/* ---------- ARTICULO DESTACADO ----------*/
 .articulo.destacado {
 	grid-area: destacado;
 	color: white;
@@ -244,13 +243,13 @@ a {
 
 
 
-@media (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
     body{
         font-size: 14px;
     }
 }
 
-@media (max-width: 992px) {
+@media screen and (max-width: 992px) {
     body{
         font-size: 16px;
     }
@@ -265,7 +264,7 @@ a {
 
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     
     .articulo.destacado {
         grid-template-columns: 1fr;
@@ -274,7 +273,7 @@ a {
 
 }
 
-@media (max-width: 576px ) {
+@media screen and (max-width: 576px ) {
     body{
         font-size: 12px;
     }

@@ -1,0 +1,29 @@
+.header {
+    grid-area: header;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2); }
+    .header__logo {
+      margin: auto;
+      text-align: center;
+      width: 300px; }
+  
+  .menu {
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    display: flex;
+    justify-content: space-between; }
+    .menu__a {
+      padding: 5px;
+      color: #000;
+      display: block;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 400;
+      width: 100%;
+      text-align: center;
+      transition: 0.2s ease all;
+      font-size: 1em; }
+    .menu__a:hover {
+      background: #000;
+      color: #fff; }

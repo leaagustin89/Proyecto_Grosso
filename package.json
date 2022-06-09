@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-sass": "node-sass --include-path scss sass/index.scss/translated.css",
+    "build-sass": "node-sass --include-path scss sass/index.scss css/index.css",
     "watch-sass": "nodemon -e scss -x \"npm run build-sass\""
   },
   "repository": {
@@ -19,12 +19,8 @@
     "url": "https://github.com/leaagustin89/Proyecto_Grosso/issues"
   },
   "homepage": "https://github.com/leaagustin89/Proyecto_Grosso#readme",
-  "dependencies": {
-    "fixed": "^0.3.1",
-    "it": "^1.1.1",
-    "node-sass": "^7.0.1"
-  },
   "devDependencies": {
+    "node-sass": "^7.0.1",
     "nodemon": "^2.0.16"
   }
 }
