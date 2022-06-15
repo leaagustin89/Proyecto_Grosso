@@ -5,10 +5,10 @@
 }
 
 body {
-	font-family: 'Roboto Condensed', sans-serif;
+	font-family: $font-principal;
 	font-weight: 300;
-	background-image: repeating-linear-gradient(90deg, #fff, #fff 20px, #fbfbfb 20px, #fbfbfb 40px);
-    font-size: 16px;
+	background-image: $base;
+    
 }
 
 img {
