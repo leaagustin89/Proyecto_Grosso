@@ -1,0 +1,47 @@
+/* "Turnos" Page */
+.mainTurnos {
+    @include flex(column nowrap, flex-start, stretch);
+    background: $bg-gr-mains;
+    padding: 3rem;
+    gap: 2rem;
+    .imgTurnos {
+        width: 80%;
+        max-width: 400px;
+        align-self: center;
+        justify-self: center;
+        box-shadow: 0 0px 10px 5px #2b2c28b4;
+        border-radius: 10px;
+    }
+    &__infoto {
+        @include flex(column nowrap, flex-start, center);
+        gap: 2rem;
+    }
+}
+
+.turnExpl {
+    @include flex(column nowrap, space-between, center);
+    gap: 1rem;
+
+    #florLotus {
+        width: 7rem;
+        height: 7rem;
+    }
+    #prSpan {
+        width: 150px;
+    }
+}
+
+b {
+    font-size: 1.8rem;
+}
+
+.tildes {
+    font-family: "fuenteTitulo";
+    font-size: 0.8em;
+}
+
+.textoTurnos {
+    font-family: "fuenteTexto";
+    font-size: 1.8rem;
+    text-align: center;
+}

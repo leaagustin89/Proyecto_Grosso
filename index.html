@@ -1,132 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Into The Wild</title>
-    <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="icon" href="img/into.ico.jpg">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Osiris - Salón de estética</title>
+        <meta
+            name="description"
+            content="Salón de estética especializado en depilación y uñas. Servicios de podología y criolipólisis. Consulta horarios aquí.
+        "
+        />
+        <meta
+            name="keywords"
+            content="UÑAS, DEPILACIÓN, DEPILACION, MANICURA, PERDICURA, PODOLOGIA, CRIOLIPOLISIS, CEJAS, ESTETICA, OSIRIS"
+        />
+        <!-- Favicon -->
+        <link rel="shortcut icon" type="image/png" href="./assets/Img/Lotus.png" />
+        <!-- Link Bootstrap -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        />
+        <!-- Link Css -->
+        <link rel="stylesheet" href="css/style.css" />
+        <!-- Inconos -->
+        <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    </head>
 
-    
-</head>
-<body>
-    <div class="contenedor">
-                                                         <!-- HEADER DE LA PAGINA-->
-        <header class="header">
-            <div class="logo">
-                <a href="index.html"><img src="./img/into-the-wild-507c3bf42ccdd.png" alt="logo"></a>
-            </div>
-            <nav class="menu">
-                <a href="./index.html">Inicio</a>
-                <a href="./pages/historia.html">Historia</a>
-                <a href="./pages/tienda.html">Tienda</a>
-                <a href="./pages/multimedia.html">Media</a>
-                <a href="./pages/contacto.html">Contacto</a>
+    <body>
+        <!-- Header -->
+        <header>
+            <!-- Logo -->
+            <a href="./index.html">
+                <img
+                    id="logo"
+                    src="./contenidoMarca/osirisWEB/logo-osiris.png"
+                    alt="Logo de Osiris"
+                />
+            </a>
+            <!-- End of logo -->
+            <!-- Nav Menu -->
+            <nav class="navbar navbar-expand-md navbar-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"></a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="./index.html"
+                                    >Home</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./html/servicios.html">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./html/galeria.html">Galería</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./html/turnos.html">Turnos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./html/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
+            <!-- End of Nav Menu -->
         </header>
+        <!-- End of header -->
+        <!-- Main Content -->
+        <main class="heroSection">
+            <!-- Hero Section -->
 
-                                         <!-- FIN HEADER DE LA PAGINA-->
-
-         
-
-        <article class="articulo destacado">
-            <div class="contenedor-texto">
-                <div>
-                    <h2 class="titulo"><a href="https://alaskapowder.com/">Descubre Alaska</a></h2>
+            <div
+                id="carouselExampleControls"
+                class="container-fluid shadow-lg p-0 carousel slide"
+                data-bs-ride="carousel"
+            >
+                <!-- <h1 class="tituloIndex"><u>POTENCIAMOS TU BELLEZA</u></h1> -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active item__height">
+                        <img
+                            src="assets/photos/manoCarousel.jpg"
+                            class="d-block w-100"
+                            alt="Manicura"
+                        />
+                    </div>
+                    <div class="carousel-item item__height">
+                        <img
+                            src="assets/photos/piesCarousel.jpg"
+                            class="d-block w-100"
+                            alt="Pedicura"
+                        />
+                    </div>
+                    <div class="carousel-item item__height">
+                        <img
+                            src="assets/photos/cejaCarousel.jpg"
+                            class="d-block w-100"
+                            alt="Cejas"
+                        />
+                    </div>
                 </div>
-                <p class="extracto">
-                    Como muchos viajeros, se sienten atraídos por caminos poco transitados y aisladas regiones fronterizas donde la espontaneidad y la excitación predominan sobre la certeza y las comodidades de casa. Alaska reúne todos estos requisitos. Retadora, sin pulir y dura de roer, es en muchos sentidos. Como un extraño en tierra extraña, nunca dejo de sorprenderme por los extremos y la enorme falta de población del estado. Y aunque viajar aquí no es siempre fácil, supone un continuo aprendizaje.
-                </p>
-                <a href="https://alaskapowder.com/" class="btn-link">Leer más</a>
+                <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev"
+                >
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next"
+                >
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <div class="contenedor-thumbnail">
-                <img src="./img/lagosmall.png" alt="lago" />
-                </a>
-            </div>
-        </article>
-
-        <main class="contenido">
-            <article class="articulo">
-                <div class="contenedor-thumbnail">
-                    <img src="./img/riversmall.png" alt="rio" />
-                </div>
-                <div class="contenedor-texto">
-                    <div>
-                        <h2 class="titulo">
-                            <a href="https://www.youtube.com/watch?v=cfGS-CaWg2s">Bosque Boreal</a>
-                        </h2>
-                    </div>
-                    <p class="extracto">
-                        Es un bioma caracterizado por sus formaciones boscosas de coníferas, siendo una de las mayores masas forestales del planeta. 
-                    </p>
-                    <a href="https://es.wikipedia.org/wiki/Taiga" class="btn-link">Leer más</a>
-                </div>
-            </article>
-
-            <article class="articulo">
-                <div class="contenedor-thumbnail">
-                    <img src="./img/lake.jpg" alt="lago" />
-                </div>
-                <div class="contenedor-texto">
-                    <div>
-                        <h2 class="titulo">
-                            <a href="https://es.wikipedia.org/wiki/Taiga">Taiga</a>
-                        </h2>
-                      
-                    </div>
-                    <p class="extracto">
-                        Se emplea “bosque boreal” para designar la zona sur del ecosistema, mientras que “taiga” se usa para la zona más próxima a la línea de vegetación ártica.
-                    </p>
-                    <a href="https://es.wikipedia.org/wiki/Taiga" class="btn-link">Leer más</a>
-                </div>
-            </article>
-
-            <article class="articulo">
-                <div class="contenedor-thumbnail">
-                    <img src="./img/snow.jpg" alt="nieve" />
-                </div>
-                <div class="contenedor-texto">
-                    <div>
-                        <h2 class="titulo">
-                            <a href="">Clima</a>
-                        </h2>
-                      
-                    </div>
-                    <p class="extracto">
-                        El clima presenta diferentes tipos, según la región. La costa occidental posee un clima oceánico, mientras que el resto presenta un clima continental y ártico.
-                    </p>
-                    <a href="https://es.wikipedia.org/wiki/Alaska#Clima"" class="btn-link">Leer más</a>
-                </div>
-            </article>
+            <!-- End of Hero Section -->
         </main>
-
-        <aside class="sidebar">
-            <div class="acerca-de">
-                <img src="./img/58330.jpg" class="img-perfil" alt="" />
-
-                <div class="bio">
-                    <p class="titulo">INTO THE WILD</p>
-                    <p>Esta Fanpage hecha con amor 🧡 sobre el libro de Jon Krakauer</p>
+        <!-- End of Main Content -->
+        <!-- Section ft gallery -->
+        <div class="ctIndex">
+            <section class="ctIndex__section">
+                <div class="ctIndex__section__title">
+                    <h2>Nuestros Servicios</h2>
                 </div>
-            </div>
-            <nav class="menu">
-                <a href="https://es.wikipedia.org/wiki/Into_the_Wild">Acerca de</a>
-                <a href="https://alaskapowder.com/">Visit Alaska</a>
-                <a href="#">Contacto</a>
+                <!-- Waxing -->
+                <div id="depi" class="ctIndex__serv">
+                    <img
+                        class="ctIndex__serv__img"
+                        src="./assets/photos/piernasOjotas.jfif"
+                        alt="Piernas con uñas hechas"
+                    />
+                    <span class="ctIndex__serv__span">Depilación Completa</span>
+                    <a href="./html/servicios.html#tituloServ">
+                        <button class="ctIndex__serv__bt">+Info</button>
+                    </a>
+                </div>
+                <!-- Eyebrow profiling -->
+                <div id="perf" class="ctIndex__serv">
+                    <img
+                        class="ctIndex__serv__img"
+                        src="./assets/photos/ojoPlanta.jfif"
+                        alt="Ojo de mujer + Planta"
+                    />
+                    <span class="ctIndex__serv__span">Perfilado de Cejas</span>
+                    <a href="./html/servicios.html#podoLi">
+                        <button class="ctIndex__serv__bt">+Info</button>
+                    </a>
+                </div>
+                <!-- Manicure & Pedicure -->
+                <div id="mani" class="ctIndex__serv">
+                    <img
+                        class="ctIndex__serv__img"
+                        src="./assets/photos/manicuraNegra.jpg"
+                        alt="Mano con uñas negras"
+                    />
+                    <span class="ctIndex__serv__span">Manicura y Pedicura</span>
+                    <a href="./html/servicios.html#depiLi">
+                        <button class="ctIndex__serv__bt">+Info</button>
+                    </a>
+                </div>
+                <!-- Chiropody -->
+                <div id="podo" class="ctIndex__serv">
+                    <img
+                        class="ctIndex__serv__img"
+                        src="./assets/photos/cuerpoMujerPlaya.jfif"
+                        alt="Mujer sobre una roca"
+                    />
+                    <span class="ctIndex__serv__span">Podología Completa</span>
+                    <a href="./html/servicios.html#maniLi">
+                        <button class="ctIndex__serv__bt">+Info</button>
+                    </a>
+                </div>
+            </section>
+        </div>
+        <!-- End of section ft gallery -->
+        <!-- Footer -->
+        <footer>
+            <!-- Nav menu -->
+            <nav>
+                <ul class="navFooter">
+                    <li class="liNav"><a class="onPage" href="./index.html">Home</a></li>
+                    <li class="liNav"><a href="./html/servicios.html">Servicios</a></li>
+                    <li class="liNav"><a href="./html/galeria.html">Galería</a></li>
+                    <li class="liNav"><a href="./html/turnos.html">Turnos</a></li>
+                    <li class="liNav"><a href="./html/contacto.html">Contacto</a></li>
+                    <li class="liNav">
+                        <a href="./html/error.html">Productos</a>
+                    </li>
+                </ul>
             </nav>
-        </aside>
+            <!-- Contact info -->
+            <!-- Business hours -->
+            <div class="datosContacto horario">
+                <li>Días y Horarios de Atención</li>
+                <li>Lun. a Vie.: 09 a 18 hs.</li>
+                <li>Sábados: 08 a 13 hs.</li>
 
-        <footer class="footer">
-            <p>Copyright © </p>
+                <!-- Social media -->
+                <div>
+                    <a
+                        target="blank"
+                        title="Instagram"
+                        href="https://www.instagram.com/"
+                    >
+                        <span
+                            title="Instagram"
+                            class="iconify"
+                            data-icon="akar-icons:instagram-fill"
+                            data-inline="false"
+                        >
+                        </span>
+                    </a>
+                    <a
+                        target="blank"
+                        href=https://goo.gl/maps/en4G5LeqBict58Xq7
+                    >
+                        <span
+                            title="Ubicación"
+                            class="iconify"
+                            data-icon="carbon:location-filled"
+                            data-inline="false"
+                        >
+                        </span>
+                    </a>
+                </div>
+                <!-- End of social media -->
+            </div>
+            <!-- Address and phone -->
+            <div class="datosContacto address">
+                <li>Tel: 223-4771942</li>
+                <li>Luro 2368</li>
+                <li>Mar del Plata</li>
+                <li>Argentina</li>
+            </div>
+            <!-- Copyright -->
+            <div class="copyRight">
+                <p>Copyright© 2022</p>
+            </div>
         </footer>
-    </div>
-
-   
-    
-</body>
+        <!-- End of Footer -->
+        <!-- js Bootstrap -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"
+        ></script>
+        <!-- js Iconify -->
+        <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    </body>
 </html>
-
-
-

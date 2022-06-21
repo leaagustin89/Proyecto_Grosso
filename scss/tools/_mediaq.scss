@@ -1,0 +1,321 @@
+/* Medias Query */
+
+// Max 600px
+@media only screen and (max-width: 600px) {
+    // General
+    h1 {
+        font-weight: 500;
+    }
+
+    h2 {
+        font-weight: 500;
+    }
+    // header
+    header {
+        position: static;
+        top: 0;
+    }
+    // index
+    .ctIndex {
+        &__section {
+            padding: 5rem 0 3rem 0;
+        }
+
+        &__section__title {
+            font-size: 2.8rem;
+        }
+
+        &__serv__span {
+            font-size: 2.4rem;
+        }
+
+        &__serv__bt {
+            width: 75px;
+            height: 30px;
+        }
+
+        &__serv__img {
+            width: 230px;
+            height: 350px;
+        }
+    }
+    // footer
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 120px 50px;
+        grid-template-areas:
+            " horario direccion"
+            "copyright copyright";
+        background-image: url(../assets/Img/texturaMarmol.jpg);
+        background-size: cover;
+        padding: 3rem 3rem 0rem 3rem;
+        .navFooter {
+            display: none;
+        }
+        .datosContacto {
+            font-size: 2rem;
+        }
+        .address {
+            text-align: right;
+        }
+    }
+}
+
+// Min 600px
+@media only screen and (min-width: 600px) {
+    /* gallery */
+    .ctGal {
+        max-width: 450px;
+
+        &__figu__bt {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    }
+}
+
+// Min 900px
+@media only screen and (min-width: 900px) {
+    /* * */
+    h2 {
+        font-size: 4.2rem;
+    }
+
+    /* Header */
+    #logo {
+        width: 22rem;
+    }
+    /* Index */
+
+    .ctIndex {
+        &__section {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 80px 550px 550px;
+            grid-template-areas:
+                ". tituloIn tituloIn ."
+                ". depiIn maniIn ."
+                ". perfIn  podoIn .";
+            background: $bg-gr-mains;
+            height: 1350px;
+            padding: 5rem 2rem 2rem 2rem;
+            gap: 6rem;
+
+            &__serv {
+                gap: 2rem;
+            }
+
+            &__title {
+                font-size: 1.8rem;
+            }
+        }
+    }
+    #depi {
+        grid-area: depiIn;
+    }
+
+    #perf {
+        grid-area: perfIn;
+    }
+
+    #mani {
+        grid-area: maniIn;
+    }
+
+    #podo {
+        grid-area: podoIn;
+    }
+    /* "Servicios" */
+
+    .ctServi {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 150px 500px 500px 500px 500px;
+        grid-template-areas:
+            ". tituloServ ."
+            "depiImg depiImg depiLi"
+            "maniLi maniImg maniImg"
+            "podoImg podoImg podoLi"
+            "perfLi perfImg perfImg";
+        align-items: center;
+        padding: 3rem;
+        background: $bg-gr-mains;
+        &__data__list {
+            font-size: 3rem;
+        }
+        &__img {
+            width: 80%;
+            object-fit: cover;
+            max-width: 700px;
+        }
+    }
+
+    #tituloServ {
+        grid-area: tituloServ;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #depiLi {
+        grid-area: depiLi;
+        justify-self: center;
+        align-self: center;
+    }
+
+    #depiImg {
+        grid-area: depiImg;
+        align-self: center;
+        justify-self: center;
+    }
+
+    #maniLi {
+        grid-area: maniLi;
+        justify-self: center;
+        align-self: center;
+    }
+
+    #maniImg {
+        grid-area: maniImg;
+        align-self: center;
+        justify-self: center;
+    }
+
+    #podoLi {
+        grid-area: podoLi;
+        justify-self: center;
+        align-self: center;
+    }
+
+    #podoImg {
+        grid-area: podoImg;
+        align-self: center;
+        justify-self: center;
+    }
+
+    #perfLi {
+        grid-area: perfLi;
+        justify-self: center;
+        align-self: center;
+    }
+
+    #perfImg {
+        grid-area: perfImg;
+        align-self: center;
+        justify-self: center;
+    }
+
+    /* "Galería" */
+    .ctGal {
+        display: grid;
+        max-width: 752px;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 220px 220px 220px;
+
+        &__figu__bt {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    }
+
+    .ctGal__figu:nth-child(1) {
+        grid-row-start: span 2;
+        grid-column-start: span 2;
+    }
+
+    .ctGal__figu:nth-child(2) {
+        grid-column-start: span 2;
+    }
+
+    .ctGal__figu:nth-child(5) {
+        grid-column-start: span 2;
+        grid-row-start: span 2;
+    }
+
+    .ctGal__figu:nth-child(6) {
+        grid-column-start: span 3;
+    }
+    /* "Turnos" */
+    .mainTurnos {
+        min-height: 60vh;
+        gap: 8rem;
+        &__infoto {
+            @include flex(row nowrap, space-evenly, center);
+            gap: 10vw;
+        }
+    }
+    .turnExpl {
+        max-width: 415px;
+    }
+    .textoTurnos {
+        font-size: 2rem;
+    }
+
+    /* "Contacto" */
+    .formulario {
+        @include flex(row-reverse, space-evenly, baseline);
+    }
+    .imgCont {
+        max-width: 650px;
+    }
+    form {
+        width: 550px;
+    }
+    .map {
+        height: 30vw;
+        width: 30vw;
+    }
+}
+
+// Min 1040px
+@media only screen and (min-width: 1040px) {
+    footer {
+        padding-left: 100px;
+    }
+
+    .galleryMain {
+        .ctGal {
+            display: grid;
+            max-width: 900px;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: 250px 250px 250px;
+            gap: 1.6rem;
+        }
+    }
+}
+
+// Min 1250px
+@media only screen and (min-width: 1250px) {
+    // index
+    .ctIndex {
+        &__section {
+            grid-template-rows: 80px 550px;
+            grid-template-areas:
+                ". tituloIn tituloIn ."
+                "depiIn maniIn perfIn  podoIn";
+            height: 700px;
+        }
+    }
+
+    //Servicios
+
+    .ctServi {
+        &__data__list {
+            font-size: 4.5rem;
+        }
+    }
+
+    #tituloServ {
+        font-size: 6rem;
+    }
+
+    // Turnos
+    .mainTurnos {
+        .imgTurnos {
+            max-width: 600px;
+            width: 600px;
+        }
+    }
+}

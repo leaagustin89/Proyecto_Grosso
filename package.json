@@ -1,26 +1,25 @@
 {
-  "name": "proyecto_grosso---respaldo---sass",
+  "name": "copiaproyecto",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-sass": "node-sass --include-path scss sass/index.scss css/translated.css",
-    "watch-sass": "nodemon -e scss -x \"npm run build-sass\""
+    "build-css": "node-sass --include-path scss scss/styles.scss css/style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/leaagustin89/Proyecto_Grosso.git"
+    "url": "git+https://github.com/Ronnielas/proyectofinal.git"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/leaagustin89/Proyecto_Grosso/issues"
+    "url": "https://github.com/Ronnielas/proyectofinal/issues"
   },
-  "homepage": "https://github.com/leaagustin89/Proyecto_Grosso#readme",
+  "homepage": "https://github.com/Ronnielas/proyectofinal#readme",
   "devDependencies": {
-    "node-sass": "^7.0.1",
-    "nodemon": "^2.0.16"
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.12"
   }
 }

@@ -1,0 +1,49 @@
+//Imports
+// Variables
+@import "tools/variables";
+// Mixins
+@import "tools/mixins";
+// Fuentes
+@import "tools/fuentes";
+// Generales
+@import "layout/generales";
+// Header
+@import "layout/header";
+// Index
+@import "pages/index";
+// Servicios
+@import "pages/servicios";
+// Galería
+@import "pages/galeria";
+// Turnos
+@import "pages/turnos";
+// Contacto
+@import "pages/contacto";
+// Error 404
+@import "layout/error";
+// Footer
+@import "layout/footer";
+// Media Query
+@import "tools/mediaq";
+
+/* Correcciones Bootstrap */
+* {
+    box-sizing: initial;
+    line-height: initial;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: initial;
+    line-height: initial;
+}
